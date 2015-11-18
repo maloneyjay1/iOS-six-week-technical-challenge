@@ -15,6 +15,8 @@
 		E62B2F0E1BFD1D9700C81B9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E62B2F0C1BFD1D9700C81B9C /* LaunchScreen.storyboard */; };
 		E62B2F191BFD1D9700C81B9C /* week6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62B2F181BFD1D9700C81B9C /* week6Tests.swift */; };
 		E62B2F241BFD1D9800C81B9C /* week6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62B2F231BFD1D9800C81B9C /* week6UITests.swift */; };
+		E62B2F321BFD27CD00C81B9C /* ItemListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62B2F311BFD27CD00C81B9C /* ItemListTableViewController.swift */; };
+		E62B2F341BFD27E900C81B9C /* ItemPairCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62B2F331BFD27E900C81B9C /* ItemPairCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		E62B2F1F1BFD1D9700C81B9C /* week6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = week6UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E62B2F231BFD1D9800C81B9C /* week6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = week6UITests.swift; sourceTree = "<group>"; };
 		E62B2F251BFD1D9800C81B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E62B2F311BFD27CD00C81B9C /* ItemListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListTableViewController.swift; sourceTree = "<group>"; };
+		E62B2F331BFD27E900C81B9C /* ItemPairCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPairCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			children = (
 				E62B2F001BFD1D9700C81B9C /* AppDelegate.swift */,
 				E62B2F021BFD1D9700C81B9C /* ViewController.swift */,
+				E62B2F311BFD27CD00C81B9C /* ItemListTableViewController.swift */,
+				E62B2F331BFD27E900C81B9C /* ItemPairCollectionViewController.swift */,
 				E62B2F041BFD1D9700C81B9C /* Main.storyboard */,
 				E62B2F0A1BFD1D9700C81B9C /* Assets.xcassets */,
 				E62B2F0C1BFD1D9700C81B9C /* LaunchScreen.storyboard */,
@@ -264,7 +270,9 @@
 			files = (
 				E62B2F031BFD1D9700C81B9C /* ViewController.swift in Sources */,
 				E62B2F011BFD1D9700C81B9C /* AppDelegate.swift in Sources */,
+				E62B2F321BFD27CD00C81B9C /* ItemListTableViewController.swift in Sources */,
 				E62B2F091BFD1D9700C81B9C /* week6.xcdatamodeld in Sources */,
+				E62B2F341BFD27E900C81B9C /* ItemPairCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
