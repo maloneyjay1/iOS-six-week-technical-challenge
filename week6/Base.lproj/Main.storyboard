@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="2754" y="92"/>
         </scene>
-        <!--View Controller-->
+        <!--Item Detail View Controller-->
         <scene sceneID="COc-OO-1Wu">
             <objects>
-                <viewController id="mm0-DK-WMN" sceneMemberID="viewController">
+                <viewController id="mm0-DK-WMN" customClass="ItemDetailViewController" customModule="week6" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jfL-Yr-1dv"/>
                         <viewControllerLayoutGuide type="bottom" id="1qd-0r-vLD"/>
