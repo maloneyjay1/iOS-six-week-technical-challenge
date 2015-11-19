@@ -12,6 +12,8 @@ class PairCollectionViewController: UIViewController {
     
     @IBAction func randomTapped(sender: AnyObject) {
         ItemController.sharedController.items.shuffleInPlace()
+        self.collectionView.reloadData()
+        
     }
     
     @IBOutlet weak var collectionView: UICollectionView!
