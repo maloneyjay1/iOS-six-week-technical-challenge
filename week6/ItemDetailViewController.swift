@@ -33,7 +33,6 @@ class ItemDetailViewController: UIViewController, UITextFieldDelegate {
         
         if let item = self.item {
             item.title = self.titleTextField.text!
-            item.timeStamp = NSDate()
         } else {
             let newItem = Item(title: self.titleTextField.text!, text: "")
             ItemController.sharedController.addItem(newItem)

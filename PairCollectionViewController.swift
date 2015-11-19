@@ -10,6 +10,9 @@ import UIKit
 
 class PairCollectionViewController: UIViewController {
     
+    @IBAction func randomTapped(sender: AnyObject) {
+        ItemController.sharedController.items.shuffleInPlace()
+    }
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -20,7 +23,7 @@ class PairCollectionViewController: UIViewController {
     
 }
 
-//WHY is my collection view not populating?
+//got collection view working, still trying to format correctly
 
 extension PairCollectionViewController: UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
     
@@ -29,16 +32,17 @@ extension PairCollectionViewController: UICollectionViewDataSource, UICollection
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("resultsCell", forIndexPath: indexPath) as! PairCollectionCell
         
         let item = ItemController.sharedController.items[indexPath.row]
-        cell.titleLabel.text = item.title
+        cell.titleLabel?.text = item.title
         return cell
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return ItemController.sharedController.items.count
+
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: self.view.frame.size.width/3 - 1, height: self.view.frame.size.height/3 - 1)
+        return CGSize(width: self.view.frame.size.width/2, height: self.view.frame.size.height/4-1)
     }
     
 }
