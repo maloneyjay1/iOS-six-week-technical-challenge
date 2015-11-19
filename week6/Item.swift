@@ -9,35 +9,31 @@
 import Foundation
 
 class Item: Equatable {
-    
-    private let timeStampKey = "timeStamp"
+   
     private let titleKey = "title"
     private let textKey = "text"
     
-    var timeStamp: NSDate
+  
     var title: String
     var text: String
+    var pairNumber: Int = 0
     
-    init(timeStamp:NSDate =  NSDate(), title:String, text:String) {
+    init(title:String, text:String) {
         
-        self.timeStamp = timeStamp
         self.title = title
         self.text = text
     }
     
     init?(dictionary: [String: AnyObject]) {
-        guard let timestamp = dictionary[timeStampKey] as? NSDate,
-            let title = dictionary[titleKey] as? String,
+        guard let title = dictionary[titleKey] as? String,
             let text = dictionary[textKey] as? String else {
                 
-                self.timeStamp = NSDate()
                 self.title = ""
                 self.text = ""
                 
                 return nil
         }
-        
-        self.timeStamp = timestamp
+
         self.title = title
         self.text = text
         
@@ -46,7 +42,6 @@ class Item: Equatable {
     func dictionaryCopy() -> [String: AnyObject] {
         
         let dictionary = [
-            timeStampKey : self.timeStamp,
             titleKey : self.title,
             textKey : self.text
         ]

@@ -16,10 +16,11 @@
 		E62B2F191BFD1D9700C81B9C /* week6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62B2F181BFD1D9700C81B9C /* week6Tests.swift */; };
 		E62B2F241BFD1D9800C81B9C /* week6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62B2F231BFD1D9800C81B9C /* week6UITests.swift */; };
 		E62B2F321BFD27CD00C81B9C /* ItemListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62B2F311BFD27CD00C81B9C /* ItemListTableViewController.swift */; };
-		E62B2F341BFD27E900C81B9C /* ItemPairCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62B2F331BFD27E900C81B9C /* ItemPairCollectionViewController.swift */; };
 		E62B2F371BFD332300C81B9C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62B2F361BFD332300C81B9C /* Item.swift */; };
 		E62B2F391BFD37E600C81B9C /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62B2F381BFD37E500C81B9C /* ItemDetailViewController.swift */; };
 		E62B2F3B1BFD382C00C81B9C /* ItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62B2F3A1BFD382C00C81B9C /* ItemController.swift */; };
+		E62B2F3D1BFD583F00C81B9C /* PairCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62B2F3C1BFD583F00C81B9C /* PairCollectionViewController.swift */; };
+		E62B2F431BFD5C5400C81B9C /* PairCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62B2F421BFD5C5400C81B9C /* PairCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +56,11 @@
 		E62B2F231BFD1D9800C81B9C /* week6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = week6UITests.swift; sourceTree = "<group>"; };
 		E62B2F251BFD1D9800C81B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E62B2F311BFD27CD00C81B9C /* ItemListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListTableViewController.swift; sourceTree = "<group>"; };
-		E62B2F331BFD27E900C81B9C /* ItemPairCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPairCollectionViewController.swift; sourceTree = "<group>"; };
 		E62B2F361BFD332300C81B9C /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		E62B2F381BFD37E500C81B9C /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		E62B2F3A1BFD382C00C81B9C /* ItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemController.swift; sourceTree = "<group>"; };
+		E62B2F3C1BFD583F00C81B9C /* PairCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PairCollectionViewController.swift; path = ../PairCollectionViewController.swift; sourceTree = "<group>"; };
+		E62B2F421BFD5C5400C81B9C /* PairCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +113,9 @@
 			children = (
 				E62B2F001BFD1D9700C81B9C /* AppDelegate.swift */,
 				E62B2F021BFD1D9700C81B9C /* ViewController.swift */,
+				E62B2F3C1BFD583F00C81B9C /* PairCollectionViewController.swift */,
+				E62B2F421BFD5C5400C81B9C /* PairCollectionCell.swift */,
 				E62B2F311BFD27CD00C81B9C /* ItemListTableViewController.swift */,
-				E62B2F331BFD27E900C81B9C /* ItemPairCollectionViewController.swift */,
 				E62B2F381BFD37E500C81B9C /* ItemDetailViewController.swift */,
 				E62B2F361BFD332300C81B9C /* Item.swift */,
 				E62B2F3A1BFD382C00C81B9C /* ItemController.swift */,
@@ -281,10 +284,11 @@
 				E62B2F391BFD37E600C81B9C /* ItemDetailViewController.swift in Sources */,
 				E62B2F3B1BFD382C00C81B9C /* ItemController.swift in Sources */,
 				E62B2F011BFD1D9700C81B9C /* AppDelegate.swift in Sources */,
+				E62B2F3D1BFD583F00C81B9C /* PairCollectionViewController.swift in Sources */,
 				E62B2F321BFD27CD00C81B9C /* ItemListTableViewController.swift in Sources */,
 				E62B2F091BFD1D9700C81B9C /* week6.xcdatamodeld in Sources */,
 				E62B2F371BFD332300C81B9C /* Item.swift in Sources */,
-				E62B2F341BFD27E900C81B9C /* ItemPairCollectionViewController.swift in Sources */,
+				E62B2F431BFD5C5400C81B9C /* PairCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

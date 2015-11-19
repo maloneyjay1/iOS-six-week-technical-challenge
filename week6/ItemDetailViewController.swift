@@ -8,28 +8,53 @@
 
 import UIKit
 
-class ItemDetailViewController: UIViewController {
-
+class ItemDetailViewController: UIViewController, UITextFieldDelegate {
+    
+    
+    
+    var item: Item?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBOutlet var titleTextField: UITextField!
+    
+    @IBAction func clearButtonTapped(sender: AnyObject) {
+        
+        titleTextField.text = ""
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func saveButtonTapped(sender: AnyObject) {
+        
+        if let item = self.item {
+            item.title = self.titleTextField.text!
+            item.timeStamp = NSDate()
+        } else {
+            let newItem = Item(title: self.titleTextField.text!, text: "")
+            ItemController.sharedController.addItem(newItem)
+            self.item = newItem
+        }
+        
+        self.navigationController?.popViewControllerAnimated(true)
+        
     }
-    */
-
+    
+    func updateWithItem(item: Item) {
+        self.item = item
+        self.titleTextField.text = item.title
+     
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        
+        return true
+    }
+    
 }

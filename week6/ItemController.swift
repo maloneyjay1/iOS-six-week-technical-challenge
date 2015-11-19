@@ -49,3 +49,10 @@ class ItemController {
         NSUserDefaults.standardUserDefaults().setObject(itemDictionaries, forKey: itemsKey)
     }
 }
+
+//extension ItemController {
+//    mutating func randomize([Item] -> [Item] {
+//        
+//        
+//    }
+//}
